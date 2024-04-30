@@ -45,7 +45,7 @@ class CartPage extends StatelessWidget {
       context: context,
       builder: (context) => const AlertDialog(
         content:  
-        Text("user wants to pay! connect this app to your payment backend"),
+        Text("Your Order is confirmed, Wait for our call."),
       ),
     );
   }
@@ -94,7 +94,7 @@ class CartPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(50.0),
             child: MyButton(
-                onTap: () => payButtonPressed(context), child: Text("PAY NOW")),
+                onTap: () => payButtonPressed(context), child: Text("please order")),
           )
         ],
       ),
