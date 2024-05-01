@@ -45,7 +45,7 @@ class CartPage extends StatelessWidget {
       context: context,
       builder: (context) => const AlertDialog(
         content:  
-        Text("Your Order is confirmed, Wait for our call."),
+        Text("Your Order is confirmed."),
       ),
     );
   }
@@ -94,7 +94,7 @@ class CartPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(50.0),
             child: MyButton(
-                onTap: () => payButtonPressed(context), child: Text("please order")),
+                onTap: () => payButtonPressed(context), child: Text("Place order")),
           )
         ],
       ),
