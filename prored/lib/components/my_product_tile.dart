@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prored/models/product.dart';
 import 'package:prored/models/shop.dart';
 import 'package:provider/provider.dart';
@@ -19,12 +17,12 @@ class MyProductTile extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        content: Text("add this items to your cart?"),
+        content: const Text("add this items to your cart?"),
         actions: [
           // cancel button
           MaterialButton(
             onPressed: () => Navigator.pop(context),
-            child: Text("cancel"),
+            child: const Text("cancel"),
           ),
 
           //yes button
@@ -37,7 +35,7 @@ class MyProductTile extends StatelessWidget {
               //add to cart
               context.read<Shop>().addToCart(product);
             },
-            child: Text("yes"),
+            child: const Text("yes"),
           ),
         ],
       ),
@@ -101,7 +99,7 @@ class MyProductTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // product price
-              Text('\৳' + product.price.toStringAsFixed(2)),
+              Text('৳${product.price.toStringAsFixed(2)}'),
 
               // add to cart button
               Container(

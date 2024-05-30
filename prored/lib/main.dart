@@ -1,7 +1,5 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:prored/models/shop.dart';
 import 'package:prored/pages/cart_page.dart';
 import 'package:prored/pages/shop_page.dart';

@@ -32,7 +32,7 @@ class CartPage extends StatelessWidget {
               //add to cart
               context.read<Shop>().removeFromCart(product);
             },
-            child: Text("yes"),
+            child: const Text("yes"),
           ),
         ],
       ),
@@ -63,7 +63,7 @@ class CartPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Cart Page"),
       ),
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: Column(
         children: [
           //cart list
@@ -94,7 +94,7 @@ class CartPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(50.0),
             child: MyButton(
-                onTap: () => payButtonPressed(context), child: Text("Place order")),
+                onTap: () => payButtonPressed(context), child: const Text("Place order")),
           )
         ],
       ),

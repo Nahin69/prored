@@ -41,3 +41,23 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+# Recont New ignore files added
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+build/
+.DS_Store
+.idea/
+.vscode/
+*.iml
+.gradle/
+local.properties
+*.ipr
+*.iws
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
